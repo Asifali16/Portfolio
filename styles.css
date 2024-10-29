@@ -1,0 +1,258 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #333; /* Fallback background color */
+    color: #fff; /* Set text color to white */
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Center the name */
+.hero {
+    text-align: center; /* Center text */
+    padding: 50px 0; /* Space around the hero section */
+}
+
+.static-name {
+    animation: none; /* Disable any animations */
+    font-size: 3rem; /* Adjust font size as needed */
+}
+
+/* Styles for certificate section */
+#certificates {
+    margin: 50px 0; /* Space around the section */
+}
+
+/* Styles for certificate section */
+#certificates {
+    margin: 50px 0; /* Space around the section */
+    text-align: center; /* Centered text */
+}
+
+.certificate-gallery {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+}
+
+.certificate-item {
+    background-color: #1e1e2f; /* Dark background for a modern look */
+    color: #ffffff; /* White text for contrast */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin: 20px; /* Space between items */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+    width: 300px; /* Fixed width for uniformity */
+}
+
+.certificate-item h4 {
+    font-size: 1.5rem; /* Larger font for the title */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.certificate-item p {
+    font-size: 1rem; /* Standard font size for readability */
+    margin-bottom: 15px; /* Space below the description */
+}
+
+.certificate-item img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for the image */
+}
+
+/* Hover effect for certificate items */
+.certificate-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+
+
+.subheading, .tagline {
+    font-size: 1.5em;
+    margin: 10px 0; /* Add margin to prevent overlapping */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Shadow for subheading and tagline */
+}
+
+/* About Section */
+#about {
+    position: relative; /* Positioning for the background */
+    padding: 60px 20px; /* More padding for better spacing */
+    text-align: center;
+}
+
+.spider-web-background {
+    position: relative; /* To keep content above the background */
+    z-index: 2; /* Ensure content is above the background */
+}
+
+/* About Content */
+.about-content {
+    margin: 20px auto;
+}
+
+.about-text {
+    max-width: 600px; /* Center content */
+    margin: 0 auto;
+    line-height: 1.5; /* Improved line height for readability */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Shadow for about text */
+}
+
+/* Animation for horizontal movement */
+@keyframes moveHorizontally {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Spider Web Background */
+body::before {
+    content: url('spider-web.svg'); /* Use the SVG as a background */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Behind all other elements */
+    opacity: 0.3; /* Adjust the opacity to see content clearly */
+    pointer-events: none; /* Make sure background does not interfere with scrolling */
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 60px 20px; /* More padding for spacing */
+    text-align: center;
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows cards to wrap */
+    margin-top: 20px; /* Space above the portfolio items */
+}
+
+.portfolio-item {
+    background: rgba(255, 255, 255, 0.1); /* Transparent background for cards */
+    border: 3px solid rgba(255, 0, 0, 0.8); /* Red border */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    padding: 20px;
+    margin: 10px;
+    width: 300px; /* Set card width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling on hover */
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 6px 30px rgba(255, 0, 0, 0.8); /* Enhanced shadow effect */
+}
+
+.portfolio-item img {
+    width: 100%; /* Responsive image */
+    border-radius: 10px 10px 0 0; /* Rounded corners for the top */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Shadow for footer text */
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px; /* Padding for contact section */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    margin: 20px auto; /* Center the contact section */
+    max-width: 600px; /* Limit the width for better appearance */
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Shadow for contact heading */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Arrange form elements in column */
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 15px;
+    margin: 10px 0; /* Space between inputs */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(255, 255, 255, 0.2); /* Light background */
+    color: #fff; /* Text color */
+    font-size: 1em; /* Font size for inputs */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for inputs */
+}
+
+.contact-form button {
+    padding: 15px;
+    margin: 10px 0; /* Space above and below the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1), rgba(255, 100, 100, 1)); /* Gradient background */
+    color: #fff; /* Text color */
+    font-size: 1em; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.contact-form button:hover {
+    background: linear-gradient(90deg, rgba(255, 100, 100, 1), rgba(255, 0, 0, 1)); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slight scale on hover */
+}
+/* Styles for portfolio item titles */
+/* Styles for portfolio item descriptions */
+
+/* Styles for the contact form inputs */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    background-color: #e0f7fa; /* Light cyan background */
+    border: 1px solid #009688; /* Teal border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside the input */
+    width: 100%; /* Full width */
+    margin-bottom: 10px; /* Space below each input */
+    font-size: 16px; /* Increase font size */
+}
+
+/* Button styles */
+.contact-form .btn {
+    background-color: #4caf50; /* Green button */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Button hover effect */
+.contact-form .btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
